@@ -1,4 +1,4 @@
-#  LeetCode Practice (C++)
+#  Data strutures & algorithms Questions *Solutions* (C++)
 
 Personal repository containing modern C++ solutions organized by algorithmic topic and data structure.
 
