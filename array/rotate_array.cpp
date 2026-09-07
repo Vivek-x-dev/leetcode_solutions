@@ -19,3 +19,24 @@ class Solution {
         
     }
 };
+//--------------little better---------------
+class Solution {
+  public:
+   void rotateArr(vector<int>& arr, int d) {
+    int n = arr.size();
+
+        d %= n;    //avoid repation
+    
+        vector<int> temp(n);
+    
+        for (int i = 0; i < n - d; i++)
+            temp[i] = arr[d + i];              //O(n) Time and O(n) Space
+                                                                 
+        for (int i = 0; i < d; i++)
+            temp[n - d + i] = arr[i];
+
+
+        for (int i = 0; i < n; i++)
+            arr[i] = temp[i];
+    }
+};
